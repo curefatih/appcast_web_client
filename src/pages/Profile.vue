@@ -3,31 +3,48 @@
     <div class="user-cover">
       <progressive-background src="https://wallpapercave.com/wp/3MDceeP.jpg" />
     </div>
-    <div class="user-content wrap">
-      <div class="xl-4-12 wrap xl-center user-info">
-        <div class="user-photo">
-          <img class="user-photo_img" alt="Vue logo" src="../assets/logo.png" />
+    <div class="user-content">
+      <div class="wrap xl-gutter-8">
+        <div class="xl-4-12 wrap xl-center user-info">
+          <div class="col user-photo">
+            <img class="user-photo_img" alt="Vue logo" src="../assets/logo.png" />
+          </div>
+          <div class="col xl-1-1 user-name">
+            <div class="wrap xl-flexbox xl-center xl-center xl-gutter-8">
+              <div class="col">
+                <h3>Fatih Cüre</h3>
+              </div>
+              <div class="col">
+                <b-icon icon="check-decagram" size="is-small"></b-icon>
+              </div>
+            </div>
+          </div>
+          <div class="col xl-1-1 user-bio">Ege University - Computer Engineering Department</div>
         </div>
-        <div class="xl-1-1 user-name">
-          <h3>Fatih Cüre</h3>
-        </div>
-      </div>
-      <div class="col xl-8-12 user-hover">
-        <div class="user-badges">
-          <ul class="col xl-flexbox xl-center xl-middle">
-            <li>
-              <b-icon icon="seal" type="is-light" size="is-medium"></b-icon>
-            </li>
-            <li>
-              <b-icon icon="trophy-award" type="is-light" size="is-medium"></b-icon>
-            </li>
-            <li>
-              <b-icon icon="seal" type="is-light" size="is-medium"></b-icon>
-            </li>
-            <li>
-              <b-icon icon="seal-variant" type="is-light" size="is-medium"></b-icon>
-            </li>
-          </ul>
+        <div class="col xl-8-12 user-hover">
+          <div class="user-badges">
+            <ul class="col xl-flexbox xl-center xl-middle">
+              <li>
+                <!-- TODO -->
+                <b-tooltip
+                  label="Maybe you like a little animation"
+                  position="is-bottom"
+                  type="is-light"
+                >
+                  <b-icon icon="seal" type="is-light" size="is-medium"></b-icon>
+                </b-tooltip>
+              </li>
+              <li>
+                <b-icon icon="trophy-award" type="is-light" size="is-medium"></b-icon>
+              </li>
+              <li>
+                <b-icon icon="license" type="is-light" size="is-medium"></b-icon>
+              </li>
+              <li>
+                <b-icon icon="seal-variant" type="is-light" size="is-medium"></b-icon>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -36,13 +53,8 @@
 
 
 <script>
-import AuthWrapped from "../components/AuthWrapped";
-
 export default {
-  name: "Profile",
-  components: {
-    AuthWrapped
-  }
+  name: "Profile"
 };
 </script>
 
@@ -90,6 +102,12 @@ export default {
   position: absolute;
   bottom: -2px;
 }
+
+.user-bio {
+  font-size: 0.8rem !important;
+  margin-top: 20px;
+}
+
 .user-badges {
   background-color: var(--primary);
   margin-top: 20px;
@@ -110,5 +128,9 @@ export default {
 .user-badges ul li:hover {
   background-color: var(--primary-dark);
   box-shadow: 0 0 5px var(--primary-dark);
+}
+.tooltip {
+  position: relative;
+  z-index: 999;
 }
 </style>>
