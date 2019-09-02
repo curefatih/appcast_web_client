@@ -1,28 +1,30 @@
 <template>
-  <button class="button" :type="type">{{value}}</button>
+  <b-button  class="button-primary" v-bind="$attrs" >{{value}}</b-button>
 </template>
 
 <script>
 export default {
-  props:{
-    type: String,
-    value: String
+  inheritAttrs: false,
+  name: "ButtonPrimary",
+  props: {
+    // type: String,
+    value: String,
+    // "native-type": String
   }
-}
+};
 </script>
 
 <style>
-.button{
+.button-primary {
   background-color: var(--primary-dark);
   border: 1px solid #ddd;
   color: #fff;
-  padding: 10px 25px;
-  border-radius: 2em;
-  opacity: .5;
+  opacity: 0.5;
   cursor: pointer;
-  transition: .2s all;
+  transition: 0.2s all;
+  font-size: 1rem !important;
 }
-.button:hover{
+.button-primary:hover {
   opacity: 1;
 }
 </style>
