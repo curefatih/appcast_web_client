@@ -1,0 +1,12 @@
+Pages:
+  Profile:
+    ✔ init @started(19-09-02 01:03) @break(19-09-02 05:05) @done(19-09-02 12:43) @lasted(11h40m10s)
+  Dashboard:
+    ☐ init
+  Stream:
+    ☐ init
+  Register/Login:
+    ☐ init
+
+Components:
+  ✔ Sidebar @started(19-09-02 01:01) @break(19-09-02 05:06) @lasted(4h5m6s)
