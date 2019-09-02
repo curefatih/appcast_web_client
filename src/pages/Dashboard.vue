@@ -1,91 +1,98 @@
 <template>
-  <div class="dashboard">
-    <div class="content">
-      <div class="header">
-        <h1>Last activities</h1>
-      </div>
+  <DefaultLayout>
+    <div class="dashboard">
+      <div class="content">
+        <div class="header">
+          <h1>Last activities</h1>
+        </div>
 
-      <div class="post-content">
-        <div class="wrap xl-gutter-16">
-          <div class="post col xl-4-12">
-            <div class="post-user-info">
-              <div class="wrap xl-flexbox xl-gutter-8 xl-middle">
-                <div class="user-pp">
-                  <img src="../assets/logo.png" alt />
-                </div>
-                <div class="col user-identical">
-                  <h6>Fatih Cüre</h6>
-                  <a>@curefatih</a>
+        <div class="post-content">
+          <div class="wrap xl-gutter-16">
+            <div class="post col xl-4-12 sm-1-1">
+              <div class="post-user-info">
+                <div class="wrap xl-flexbox xl-gutter-8 xl-middle">
+                  <div class="user-pp">
+                    <img src="../assets/ppo.jpg" alt />
+                  </div>
+                  <div class="col user-identical">
+                    <h6>Fatih Cüre</h6>
+                    <a>@curefatih</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col xl-1-1 post-box">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore reprehenderit eaque eveniet eum corrupti quae dignissimos delectus? Corporis consequuntur voluptatem, placeat temporibus ducimus vitae doloremque perspiciatis veniam qui excepturi.</p>
+              <div class="col xl-1-1 post-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore reprehenderit eaque eveniet eum corrupti quae dignissimos delectus? Corporis consequuntur voluptatem, placeat temporibus ducimus vitae doloremque perspiciatis veniam qui excepturi.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="wrap xl-gutter-16">
-          <div class="post col xl-4-12">
-            <div class="post-user-info">
-              <div class="wrap xl-flexbox xl-gutter-8 xl-middle">
-                <div class="user-pp">
-                  <img src="../assets/logo.png" alt />
-                </div>
-                <div class="col user-identical">
-                  <h6>Fatih Cüre</h6>
-                  <a>@curefatih</a>
+          <div class="wrap xl-gutter-16">
+            <div class="post col xl-4-12 sm-1-1">
+              <div class="post-user-info">
+                <div class="wrap xl-flexbox xl-gutter-8 xl-middle">
+                  <div class="user-pp">
+                    <img src="../assets/ppo.jpg" alt />
+                  </div>
+                  <div class="col user-identical">
+                    <h6>Fatih Cüre</h6>
+                    <a>@curefatih</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col xl-1-1 post-box">
-              <progressive-img src="/static/welcome.jpg" />
-              <!-- <img src="../assets/somepicture.jpg" alt /> -->
+              <div class="col xl-1-1 post-box">
+                <progressive-img src="/static/welcome.jpg" />
+                <!-- <img src="../assets/somepicture.jpg" alt /> -->
+              </div>
             </div>
           </div>
-        </div>
-        <div class="wrap xl-gutter-16">
-          <div class="post col xl-4-12">
-            <div class="post-user-info">
-              <div class="wrap xl-flexbox xl-gutter-8 xl-middle">
-                <div class="user-pp">
-                  <img src="../assets/logo.png" alt />
-                </div>
-                <div class="col user-identical">
-                  <h6>Fatih Cüre</h6>
-                  <a>@curefatih</a>
-                </div>
-              </div>
-            </div>
-            <div class="col xl-1-1 post-box">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore reprehenderit eaque eveniet eum corrupti quae dignissimos delectus? Corporis consequuntur voluptatem, placeat temporibus ducimus vitae doloremque perspiciatis veniam qui excepturi.</p>
-            </div>
-          </div>
-          <div class="post col xl-4-12">
-            <div class="post-user-info">
-              <div class="wrap xl-flexbox xl-gutter-8 xl-middle">
-                <div class="user-pp">
-                  <img src="../assets/logo.png" alt />
-                </div>
-                <div class="col user-identical">
-                  <h6>Fatih Cüre</h6>
-                  <a>@curefatih</a>
+          <div class="wrap xl-gutter-16">
+            <div class="post col xl-4-12 sm-1-1">
+              <div class="post-user-info">
+                <div class="wrap xl-flexbox xl-gutter-8 xl-middle">
+                  <div class="user-pp">
+                    <img src="../assets/ppo.jpg" alt />
+                  </div>
+                  <div class="col user-identical">
+                    <h6>Fatih Cüre</h6>
+                    <a>@curefatih</a>
+                  </div>
                 </div>
               </div>
+              <div class="col xl-1-1 post-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore reprehenderit eaque eveniet eum corrupti quae dignissimos delectus? Corporis consequuntur voluptatem, placeat temporibus ducimus vitae doloremque perspiciatis veniam qui excepturi.</p>
+              </div>
             </div>
-            <div class="col xl-1-1 post-box">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore reprehenderit eaque eveniet eum corrupti quae dignissimos delectus? Corporis consequuntur voluptatem, placeat temporibus ducimus vitae doloremque perspiciatis veniam qui excepturi.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore reprehenderit eaque eveniet eum corrupti quae dignissimos delectus? Corporis consequuntur voluptatem, placeat temporibus ducimus vitae doloremque perspiciatis veniam qui excepturi.</p>
+            <div class="post col xl-4-12 sm-1-1">
+              <div class="post-user-info">
+                <div class="wrap xl-flexbox xl-gutter-8 xl-middle">
+                  <div class="user-pp">
+                    <img src="../assets/ppo.jpg" alt />
+                  </div>
+                  <div class="col user-identical">
+                    <h6>Fatih Cüre</h6>
+                    <a>@curefatih</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col xl-1-1 post-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore reprehenderit eaque eveniet eum corrupti quae dignissimos delectus? Corporis consequuntur voluptatem, placeat temporibus ducimus vitae doloremque perspiciatis veniam qui excepturi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore reprehenderit eaque eveniet eum corrupti quae dignissimos delectus? Corporis consequuntur voluptatem, placeat temporibus ducimus vitae doloremque perspiciatis veniam qui excepturi.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </DefaultLayout>
 </template>
 
 <script>
+import DefaultLayout from "../layouts/DefaultLayout";
+
 export default {
-  name: "Dashboard"
+  name: "Dashboard",
+  components: {
+    DefaultLayout
+  }
 };
 </script>
 
@@ -114,9 +121,12 @@ export default {
 
 .post {
   margin-bottom: 20px;
+  padding: 0 10px;
 }
 .user-pp img {
-  max-width: 30px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
   background-color: #0008;
   border: 1px solid #0005;
   padding: 3px;
