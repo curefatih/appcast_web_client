@@ -1,7 +1,18 @@
 Pages:
+  General:
+    ☐ Make all pages responsive
   Profile:
     ✔ init @started(19-09-02 01:03) @break(19-09-02 05:05) @done(19-09-02 12:43) @lasted(11h40m10s)
+    Subtask:
+      ✔ badge tooltip @started(19-09-02 21:52) @done(19-09-02 23:06) @lasted(1h14m56s)
   Dashboard:
+    ✔ init @started(19-09-02 12:49) @done(19-09-02 14:25) @lasted(1h36m58s)
+  Message: 
+    ✔ init @started(19-09-02 15:09) @done(19-09-02 20:23) @lasted(5h14m30s)
+    ☐ dialog-box
+    Subtasks:
+      ☐ new-conversation part with modal
+  Settings:
     ☐ init
   Stream:
     ☐ init
@@ -10,3 +21,9 @@ Pages:
 
 Components:
   ✔ Sidebar @started(19-09-02 01:01) @break(19-09-02 05:06) @lasted(4h5m6s)
+      Subtasks:   
+        ☐ Icon hover effect
+
+Other:
+  ✔ Private route @started(19-09-02 23:10) @done(19-09-03 00:00) @lasted(50m31s)
+   ☐ working with fake auth. needs real auth implementation
