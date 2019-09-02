@@ -1,60 +1,68 @@
 <template>
-  <div class="profile_wrap">
-    <div class="user-cover">
-      <progressive-background src="https://wallpapercave.com/wp/3MDceeP.jpg" />
-    </div>
-    <div class="user-content">
-      <div class="wrap xl-gutter-8">
-        <div class="xl-4-12 wrap xl-center user-info">
-          <div class="col user-photo">
-            <img class="user-photo_img" alt="Vue logo" src="../assets/logo.png" />
-          </div>
-          <div class="col xl-1-1 user-name">
-            <div class="wrap xl-flexbox xl-center xl-center xl-gutter-8">
-              <div class="col">
-                <h3>Fatih Cüre</h3>
-              </div>
-              <div class="col">
-                <b-icon icon="check-decagram" size="is-small"></b-icon>
+  <DefaultLayout>
+    <div class="profile_wrap">
+      <div class="user-cover">
+        <progressive-background src="https://wallpapercave.com/wp/3MDceeP.jpg" />
+      </div>
+      <div class="user-content">
+        <div class="wrap xl-gutter-8">
+          <div class="xl-4-12 wrap xl-center user-info">
+            <div class="col user-photo">
+              <img class="user-photo_img" alt="Vue logo" src="../assets/ppo.jpg" />
+            </div>
+            <div class="col xl-1-1 user-name">
+              <div class="wrap xl-flexbox xl-center xl-center xl-gutter-8">
+                <div class="col">
+                  <h3>Fatih Cüre</h3>
+                </div>
+                <div class="col">
+                  <b-icon icon="check-decagram" size="is-small"></b-icon>
+                </div>
               </div>
             </div>
+            <div class="col xl-1-1 user-bio">Ege University - Computer Engineering Department</div>
           </div>
-          <div class="col xl-1-1 user-bio">Ege University - Computer Engineering Department</div>
-        </div>
-        <div class="col xl-8-12 user-hover">
-          <div class="user-badges">
-            <ul class="col xl-flexbox xl-center xl-middle">
-              <li>
-                <!-- TODO -->
-                <b-tooltip
-                  label="Maybe you like a little animation"
-                  position="is-bottom"
-                  type="is-light"
-                >
-                  <b-icon icon="seal" type="is-light" size="is-medium"></b-icon>
-                </b-tooltip>
-              </li>
-              <li>
-                <b-icon icon="trophy-award" type="is-light" size="is-medium"></b-icon>
-              </li>
-              <li>
-                <b-icon icon="license" type="is-light" size="is-medium"></b-icon>
-              </li>
-              <li>
-                <b-icon icon="seal-variant" type="is-light" size="is-medium"></b-icon>
-              </li>
-            </ul>
+          <div class="col xl-8-12 user-hover">
+            <div class="user-badges">
+              <ul class="col xl-flexbox xl-center xl-middle">
+                <li>
+                  <!-- TODO -->
+                  <b-tooltip label="Awesome Badge" position="is-bottom" type="is-light" animated>
+                    <b-icon icon="seal" type="is-light" size="is-medium"></b-icon>
+                  </b-tooltip>
+                </li>
+                <li>
+                  <b-tooltip label="Greet Badge" position="is-bottom" type="is-light">
+                    <b-icon icon="trophy-award" type="is-light" size="is-medium"></b-icon>
+                  </b-tooltip>
+                </li>
+                <li>
+                  <b-tooltip label="Awesome Badge" position="is-bottom" type="is-light">
+                    <b-icon icon="license" type="is-light" size="is-medium"></b-icon>
+                  </b-tooltip>
+                </li>
+                <li>
+                  <b-tooltip label="Insane Badge" position="is-bottom" type="is-light">
+                    <b-icon icon="seal-variant" type="is-light" size="is-medium"></b-icon>
+                  </b-tooltip>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </DefaultLayout>
 </template>
 
 
 <script>
+import DefaultLayout from "../layouts/DefaultLayout";
 export default {
-  name: "Profile"
+  name: "Profile",
+  components: {
+    DefaultLayout
+  }
 };
 </script>
 
@@ -78,13 +86,16 @@ export default {
 }
 .user-photo {
   margin-top: -75px;
-  max-width: 150px;
-  max-height: 150px;
+  width: 150px;
+  height: 150px;
   background-color: #000;
   overflow: hidden;
-  border: 1px solid #0002;
   border-radius: 2rem;
   box-shadow: -5px -5px 1px #111;
+}
+.user-photo_img {
+  margin-top: 50%;
+  transform: translateY(-50%);
 }
 
 .user-name {
@@ -114,7 +125,6 @@ export default {
   border-radius: 0.2em;
   padding: 3px 50px;
   opacity: 0.5;
-  overflow: hidden;
 }
 
 .user-badges ul li {
