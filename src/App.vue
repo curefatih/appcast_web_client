@@ -1,25 +1,19 @@
 <template>
   <div id="app">
-    <AuthWrapped>
-      <router-view></router-view>
-    </AuthWrapped>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import Buefy from 'buefy'
-import 'buefy/dist/buefy.css'
-import '@mdi/font/css/materialdesignicons.css'
-Vue.use(Buefy)
+import Vue from "vue";
+import Buefy from "buefy";
+import "buefy/dist/buefy.css";
+import "@mdi/font/css/materialdesignicons.css";
+Vue.use(Buefy);
 
-import AuthWrapped from "./components/AuthWrapped";
 
 export default {
   name: "app",
-  components: {
-    AuthWrapped
-  }
 };
 </script>
 
@@ -110,7 +104,8 @@ body {
 }
 #app {
   // font-family: "Avenir", Helvetica, Arial, sans-serif;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff8;
@@ -120,5 +115,16 @@ body {
   --primary: #263238;
   --primary-dark: #212121;
   --primary-light: #4f5b62;
+  --secondary: #34495e;
+  --secondary-dark: #0005;
+  --secondary-dark-full: #000;
+  --secondary-ligt: #2c3e50;
+  --yellow: #ffb900;
+  --blue: #2980b9;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
 }
 </style>
