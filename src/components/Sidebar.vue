@@ -35,12 +35,19 @@
       </div>
       <div class="col xl-1-1 sidebar-bottom">
         <div class="sidebar-list_item">
-            <router-link to="/settings">
-              <div class="sidebar-list_item_icon">
-                <b-icon type="is-light" icon="settings"></b-icon>
-              </div>
-            </router-link>
-          </div>
+          <router-link to="/settings">
+            <div class="sidebar-list_item_icon">
+              <b-icon type="is-light" icon="settings"></b-icon>
+            </div>
+          </router-link>
+        </div>
+        <div class="sidebar-list_item">
+          <router-link to="/" exact="">
+            <div class="sidebar-list_item_icon">
+              <b-icon type="is-light" icon="logout"></b-icon>
+            </div>
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -63,11 +70,12 @@ export default {
   height: 100%;
 }
 
-.sidebar-middle .sidebar-list_item a, .sidebar-bottom .sidebar-list_item a {
+.sidebar-middle .sidebar-list_item a,
+.sidebar-bottom .sidebar-list_item a {
   display: inline-block;
   width: 50px;
   padding: 10px;
-  border-radius: .3em;
+  border-radius: 0.3em;
 }
 .sidebar-logo {
   padding: 10px;
@@ -76,11 +84,12 @@ export default {
   height: 100%;
 }
 
-.sidebar-middle .router-link-active, .sidebar-bottom .router-link-active{
+.sidebar-middle .router-link-active,
+.sidebar-bottom .router-link-active {
   background-color: var(--primary-dark);
 }
 
-.sidebar-bottom{
+.sidebar-bottom {
   margin-bottom: 15px;
 }
 .sidebar-list_item:last-child {
