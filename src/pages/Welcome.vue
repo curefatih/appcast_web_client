@@ -59,6 +59,7 @@ export default {
   height: 100%;
   background-color: #000a12;
   color: #fff;
+  padding: 0 20px;
 }
 
 .welcome-right_wrap,
