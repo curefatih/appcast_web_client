@@ -7,6 +7,7 @@ import Welcome from "../pages/Welcome.vue";
 import DashBoard from "../pages/Dashboard.vue";
 import Profile from "../pages/Profile.vue";
 import Messages from "../pages/Messages.vue";
+import StreamPage from "../pages/Streams.vue";
 import Settings from "../pages/Settings.vue";
 import NotFound from "../pages/NotFound.vue";
 
@@ -16,6 +17,7 @@ const router = new VueRouter({
     { path: '/', component: Welcome },
     { path: '/dashboard', component: DashBoard, meta: { authRequired: false } },
     { path: '/profile', component: Profile, meta: { authRequired: false } },
+    { path: '/streams', component: StreamPage, meta: { authRequired: false } },
     { path: '/settings', component: Settings, meta: { authRequired: false } },
     {
       path: '/messages',

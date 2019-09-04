@@ -18,6 +18,13 @@
             </router-link>
           </div>
           <div class="sidebar-list_item">
+            <router-link to="/streams">
+              <div class="sidebar-list_item_icon">
+                <b-icon type="is-light" icon="television-classic"></b-icon>
+              </div>
+            </router-link>
+          </div>
+          <div class="sidebar-list_item">
             <router-link to="/messages">
               <div class="sidebar-list_item_icon">
                 <b-icon type="is-light" icon="message-outline"></b-icon>
@@ -42,7 +49,7 @@
           </router-link>
         </div>
         <div class="sidebar-list_item">
-          <router-link to="/" exact="">
+          <router-link to="/" exact>
             <div class="sidebar-list_item_icon">
               <b-icon type="is-light" icon="logout"></b-icon>
             </div>

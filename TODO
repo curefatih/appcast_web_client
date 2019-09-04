@@ -9,13 +9,12 @@ Pages:
     ✔ init @started(19-09-02 12:49) @done(19-09-02 14:25) @lasted(1h36m58s)
   Message: 
     ✔ init @started(19-09-02 15:09) @done(19-09-02 20:23) @lasted(5h14m30s)
-    ☐ dialog-box
-    Subtasks:
-      ☐ new-conversation part with modal
+    ✔ dialog-box @done(19-09-04 17:26)
+    ☐ new-conversation part with modal
   Settings:
     ☐ init
   Stream:
-    ☐ init
+    ✔ init @started(19-09-04 17:02) @done(19-09-04 17:26) @lasted(24m24s)
   Register/Login:
     ☐ init
 
