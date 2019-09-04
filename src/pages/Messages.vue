@@ -18,7 +18,7 @@
                 </div>
                 <div class="col">
                   <!-- TODO: bind modal for adding new convarsation -->
-                  <h3>Start new conversation</h3> 
+                  <h3>Start new conversation</h3>
                 </div>
               </div>
             </router-link>
@@ -60,7 +60,63 @@
             </ul>
           </div>
         </div>
-        <div class="col xl-9-12 log-box"></div>
+        <div class="col xl-9-12 log-box">
+          <div class="wrap log-box_wrapper">
+            <div class="col xl-1-1 box_wrapper">
+              <div class="log-box_content">
+                <div class="content-header">
+                  <h1>Enes Kaplan</h1>
+                </div>
+                <div class="content-messages">
+                  <div class="content-message_time xl-center">
+                    <b-tag rounded>23 August 2017</b-tag>
+                  </div>
+                  <div class="content-message_item left">
+                    <div class="wrap xl-flexbox xl-outside-8 xl-gutter-8 xl-bottom">
+                      <div class="col">
+                        <div class="user-avatar">
+                          <progressive-img src="/static/welcome.jpg" />
+                        </div>
+                      </div>
+                      <div class="col xl-6-12">
+                        <div class="user-message">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequuntur asperiores eum eveniet optio? Corporis asperiores voluptas voluptates eveniet tempora! Doloremque culpa quos enim blanditiis fugiat architecto est ducimus nemo.</p>
+                        </div>
+                        <div class="user-message-time">
+                          <p>09.15am</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-message_item right">
+                    <div class="wrap xl-flexbox xl-outside-8 xl-gutter-8 xl-bottom xl-right">
+                      <div class="col xl-6-12 xl-right">
+                        <div class="user-message">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequuntur asperiores eum eveniet optio? Corporis asperiores voluptas voluptates eveniet tempora! Doloremque culpa quos enim blanditiis fugiat architecto est ducimus nemo.</p>
+                        </div>
+                        <div class="user-message-time">
+                          <p>09.16am</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-send-message xl-bottom">
+                  <div class="wrap xl-flexbox xl-middle xl-gutter-8 xl-center">
+                    <div class="col xl-11-12">
+                      <b-field>
+                        <b-input v-model="name" placeholder="write message" size="is-medium"></b-input>
+                      </b-field>
+                    </div>
+                    <div class="col xl-1-12">
+                      <b-button size="is-medium" icon-left="send"></b-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </DefaultLayout>
@@ -138,5 +194,81 @@ export default {
 }
 .log-name {
   color: #fff;
+}
+.log-box_wrapper {
+  height: 100%;
+  padding: 50px;
+}
+.box_wrapper {
+  height: 100%;
+}
+.log-box_content {
+  background-color: #eee;
+  border-radius: 0.2em;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.content-header {
+  flex: 0 1 auto;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: var(--primary-light);
+  padding: 10px;
+  background-color: var(--primary-dark);
+  border-bottom: 5px solid var(--blue);
+}
+.content-messages {
+  flex: 1 1 auto;
+  color: #333;
+  overflow: auto;
+}
+.content-message_time {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.content-message_item {
+  margin: 15px 0;
+}
+.user-avatar {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #444;
+  border-radius: 0.3em;
+  overflow: hidden;
+}
+.user-message {
+  /* background-color: var(--primary-dark); */
+  background-color: #fff;
+  /* border: 1px solid var(--secondary-light); */
+  border-radius: 1em;
+  padding: 5px 15px;
+  font-size: 14px;
+  /* max-width: 50%; */
+}
+.user-message-time {
+  font-size: 10px;
+  margin: 3px;
+  position: absolute;
+  left: 45px;
+  color: #999;
+}
+.right .user-message-time {
+  right: 15px;
+}
+.content-message_item.right .user-message {
+  background-color: var(--blue);
+}
+.content-send-message {
+  flex: 0 1 80px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 10px;
+  /* position: static;
+  bottom: 0; */
 }
 </style>
