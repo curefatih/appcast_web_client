@@ -23,7 +23,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+html{
+  overflow: hidden;
+}
 .app-wrapped {
   width: 100%;
   height: 100%;
