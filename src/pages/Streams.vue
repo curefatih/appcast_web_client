@@ -1,5 +1,5 @@
 <template>
-  <DefaultLayout>
+  <DefaultWrapper>
     <div class="stream">
       <div class="channels">
         <div class="channel">
@@ -93,15 +93,15 @@
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </DefaultWrapper>
 </template>
 
 <script>
-import DefaultLayout from "../layouts/DefaultLayout";
+import DefaultWrapper from "../wrappers/DefaultWrapper";
 export default {
   name: "Streams",
   components: {
-    DefaultLayout
+    DefaultWrapper
   }
 };
 </script>

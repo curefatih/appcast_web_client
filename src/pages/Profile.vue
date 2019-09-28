@@ -1,5 +1,5 @@
 <template>
-  <DefaultLayout>
+  <DefaultWrapper>
     <div class="profile_wrap">
       <div class="user-cover">
         <progressive-background src="https://wallpapercave.com/wp/3MDceeP.jpg" />
@@ -52,16 +52,16 @@
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </DefaultWrapper>
 </template>
 
 
 <script>
-import DefaultLayout from "../layouts/DefaultLayout";
+import DefaultWrapper from "../wrappers/DefaultWrapper";
 export default {
   name: "Profile",
   components: {
-    DefaultLayout
+    DefaultWrapper
   }
 };
 </script>
@@ -75,6 +75,7 @@ export default {
   height: 350px;
   /* background-image: url(https://wallpapercave.com/wp/3MDceeP.jpg); */
   background-size: cover;
+  background-color: #292929;
   background-position: 0 -100px;
   transform: translateY(0px);
 }

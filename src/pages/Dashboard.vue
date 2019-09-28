@@ -1,7 +1,7 @@
 <template>
-  <DefaultLayout>
+  <DefaultWrapper>
     <div class="dashboard">
-      <div class="content">
+      <div class="f_content">
         <div class="header">
           <h1>Last activities</h1>
         </div>
@@ -82,24 +82,21 @@
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </DefaultWrapper>
 </template>
 
 <script>
-import DefaultLayout from "../layouts/DefaultLayout";
+import DefaultWrapper from "../wrappers/DefaultWrapper";
 
 export default {
   name: "Dashboard",
   components: {
-    DefaultLayout
+    DefaultWrapper
   }
 };
 </script>
 
 <style>
-.content {
-  padding: 50px 0;
-}
 
 .header {
   border-bottom: 1px solid var(--secondary-dark);

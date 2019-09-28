@@ -1,5 +1,5 @@
 <template>
-  <DefaultLayout>
+  <DefaultWrapper>
     <div class="messages">
       <div class="wrap">
         <div class="col xl-3-12 inbox">
@@ -119,15 +119,15 @@
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </DefaultWrapper>
 </template>
 
 <script>
-import DefaultLayout from "../layouts/DefaultLayout";
+import DefaultWrapper from "../wrappers/DefaultWrapper";
 export default {
   name: "Messages",
   components: {
-    DefaultLayout
+    DefaultWrapper
   }
 };
 </script>
