@@ -113,7 +113,7 @@ body {
 }
 :root {
   --primary: #263238;
-  --primary-dark: #212121;
+  --primary-dark: #111111;
   --primary-light: #4f5b62;
   --secondary: #34495e;
   --secondary-dark: #0005;
@@ -123,8 +123,13 @@ body {
   --blue: #2980b9;
 }
 
-.content {
+.f_content {
   max-width: 960px;
   margin: 0 auto;
+  padding: 50px 0;
+}
+.f_content h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
 </style>
