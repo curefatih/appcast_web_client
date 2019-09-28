@@ -16,7 +16,7 @@
 import Sidebar from "../components/Sidebar";
 
 export default {
-  name: "DefaultLayout",
+  name: "DefaultWrapper",
   components: {
     Sidebar
   }
