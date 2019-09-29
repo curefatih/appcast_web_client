@@ -2,9 +2,7 @@
   <DefaultWrapper>
     <div class="dashboard">
       <div class="f_content">
-        <div class="header">
-          <h1>Last activities</h1>
-        </div>
+        <SectioHeader>Last activities</SectioHeader>
 
         <div class="post-content">
           <div class="wrap xl-gutter-16">
@@ -87,17 +85,18 @@
 
 <script>
 import DefaultWrapper from "../wrappers/DefaultWrapper";
+import SectioHeader from "../components/SectionHeader";
 
 export default {
   name: "Dashboard",
   components: {
-    DefaultWrapper
+    DefaultWrapper,
+    SectioHeader
   }
 };
 </script>
 
 <style>
-
 .header {
   border-bottom: 1px solid var(--secondary-dark);
   margin-bottom: 30px;

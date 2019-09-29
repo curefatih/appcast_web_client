@@ -103,7 +103,7 @@ export default {
   margin-top: 10px;
 }
 .user-name h3 {
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: bold;
   position: relative;
 }

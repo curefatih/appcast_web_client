@@ -18,7 +18,7 @@
                 </div>
                 <div class="col">
                   <!-- TODO: bind modal for adding new convarsation -->
-                  <h3>Start new conversation</h3>
+                  <h5>Start new conversation</h5>
                 </div>
               </div>
             </router-link>
@@ -35,7 +35,7 @@
                         </div>
                       </div>
                       <div class="col log-name">
-                        <h3>Enes Kaplan</h3>
+                        <h5>Enes Kaplan</h5>
                       </div>
                     </div>
                   </div>
@@ -51,7 +51,7 @@
                         </div>
                       </div>
                       <div class="col log-name">
-                        <h3>Halid İnce</h3>
+                        <h5>Halid İnce</h5>
                       </div>
                     </div>
                   </div>
@@ -65,7 +65,7 @@
             <div class="col xl-1-1 box_wrapper">
               <div class="log-box_content">
                 <div class="content-header">
-                  <h1>Enes Kaplan</h1>
+                  <h6>Enes Kaplan</h6>
                 </div>
                 <div class="content-messages">
                   <div class="content-message_time xl-center">
@@ -105,7 +105,7 @@
                   <div class="wrap xl-flexbox xl-middle xl-gutter-8 xl-center">
                     <div class="col xl-11-12">
                       <b-field>
-                        <b-input v-model="name" placeholder="write message" size="is-medium"></b-input>
+                        <b-input placeholder="write message" size="is-medium"></b-input>
                       </b-field>
                     </div>
                     <div class="col xl-1-12">
@@ -214,7 +214,7 @@ export default {
 .content-header {
   flex: 0 1 auto;
   font-weight: bold;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   color: var(--primary-light);
   padding: 10px;
   background-color: var(--primary-dark);
