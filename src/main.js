@@ -8,9 +8,6 @@ Vue.use(VueProgressiveImage, {
   cache: false
 });
 
-import './assets/reset.css';
-import './assets/flex.css';
-
 new Vue({
   router,
   render: h => h(App),
