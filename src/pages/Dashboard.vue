@@ -1,10 +1,8 @@
 <template>
-  <DefaultLayout>
+  <DefaultWrapper>
     <div class="dashboard">
-      <div class="content">
-        <div class="header">
-          <h1>Last activities</h1>
-        </div>
+      <div class="f_content">
+        <SectioHeader>Last activities</SectioHeader>
 
         <div class="post-content">
           <div class="wrap xl-gutter-16">
@@ -82,25 +80,23 @@
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </DefaultWrapper>
 </template>
 
 <script>
-import DefaultLayout from "../layouts/DefaultLayout";
+import DefaultWrapper from "../wrappers/DefaultWrapper";
+import SectioHeader from "../components/SectionHeader";
 
 export default {
   name: "Dashboard",
   components: {
-    DefaultLayout
+    DefaultWrapper,
+    SectioHeader
   }
 };
 </script>
 
 <style>
-.content {
-  padding: 50px 0;
-}
-
 .header {
   border-bottom: 1px solid var(--secondary-dark);
   margin-bottom: 30px;

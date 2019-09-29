@@ -16,7 +16,7 @@
 import Sidebar from "../components/Sidebar";
 
 export default {
-  name: "DefaultLayout",
+  name: "DefaultWrapper",
   components: {
     Sidebar
   }
@@ -39,7 +39,6 @@ html{
 .content-wrapped {
   height: 100%;
   flex: 1 1 0;
-  font-size: 12px;
   color: #fff;
   overflow: auto;
 }

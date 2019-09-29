@@ -1,11 +1,9 @@
 <template>
-  <DefaultLayout>
+  <DefaultWrapper>
     <div class="stream">
       <div class="channels">
         <div class="channel">
-          <div class="channel-header">
-            <h1>Public</h1>
-          </div>
+          <SectionHeader>Public</SectionHeader>
           <div class="rooms">
             <div class="wrap xl-flexbox xl-gutter-8 xl-top">
               <div class="col xl-1-5 sm-1-1 sm-1-1 room">
@@ -14,7 +12,7 @@
                     <progressive-img src="/static/welcome.jpg" />
                   </div>
                   <div class="room-name">
-                    <h2>Javascript - Beginner</h2>
+                    <h6>Javascript - Beginner</h6>
                   </div>
                 </router-link>
                 <div class="room-tags">
@@ -28,9 +26,7 @@
           </div>
         </div>
         <div class="channel">
-          <div class="channel-header">
-            <h1>Favourites</h1>
-          </div>
+          <SectionHeader>Favourites</SectionHeader>
           <div class="rooms">
             <div class="wrap xl-flexbox xl-gutter-8 xl-top">
               <div class="col xl-1-5 sm-1-1 room">
@@ -39,7 +35,7 @@
                     <progressive-img src="/static/welcome.jpg" />
                   </div>
                   <div class="room-name">
-                    <h2>Javascript - Beginner</h2>
+                    <h6>Javascript - Beginner</h6>
                   </div>
                 </router-link>
                 <div class="room-tags">
@@ -55,7 +51,7 @@
                     <progressive-img src="/static/welcome.jpg" />
                   </div>
                   <div class="room-name">
-                    <h2>Javascript - Beginner</h2>
+                    <h6>Javascript - Beginner</h6>
                   </div>
                 </router-link>
                 <div class="room-tags">
@@ -69,9 +65,7 @@
           </div>
         </div>
         <div class="channel">
-          <div class="channel-header">
-            <h1>Private</h1>
-          </div>
+          <SectionHeader>Private</SectionHeader>
           <div class="rooms">
             <div class="wrap xl-flexbox xl-gutter-8 xl-top">
               <div class="col xl-1-5 sm-1-1 room">
@@ -79,7 +73,7 @@
                   <progressive-img src="/static/welcome.jpg" />
                 </div>
                 <div class="room-name">
-                  <h2>Javascript - Beginner</h2>
+                  <h6>Javascript - Beginner</h6>
                 </div>
                 <div class="room-tags">
                   <section>
@@ -93,15 +87,17 @@
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </DefaultWrapper>
 </template>
 
 <script>
-import DefaultLayout from "../layouts/DefaultLayout";
+import DefaultWrapper from "../wrappers/DefaultWrapper";
+import SectionHeader from "../components/SectionHeader";
 export default {
   name: "Streams",
   components: {
-    DefaultLayout
+    DefaultWrapper,
+    SectionHeader
   }
 };
 </script>
@@ -118,7 +114,7 @@ export default {
 }
 .channel-header h1 {
   color: #363636;
-  font-size: 2em;
+  /* font-size: 2em; */
   position: relative;
   display: inline-block;
   margin-bottom: 0.5em;
@@ -141,7 +137,7 @@ export default {
   margin-bottom: 30px;
 }
 .room-name {
-  font-size: 1em;
+  /* font-size: 1em; */
   color: #ccc;
   transition: 0.2s;
 }

@@ -1,8 +1,10 @@
 Pages:
   General:
     ☐ Make all pages responsive
+    ☐ auth route
   Profile:
     ✔ init @started(19-09-02 01:03) @break(19-09-02 05:05) @done(19-09-02 12:43) @lasted(11h40m10s)
+    ✔ different background color for cover from content @started(19-09-28 14:16) @done(19-09-28 14:17) @lasted(1m39s)
     Subtask:
       ✔ badge tooltip @started(19-09-02 21:52) @done(19-09-02 23:06) @lasted(1h14m56s)
   Dashboard:
@@ -12,16 +14,23 @@ Pages:
     ✔ dialog-box @done(19-09-04 17:26)
     ☐ new-conversation part with modal
   Settings:
-    ☐ init
+    ✔ init @done(19-09-29 00:49)
+    subPages:
+      ✔ acoount init @done(19-09-29 00:49)
+      ✔ safety @done(19-09-29 18:55)
+      ✔ notification @done(19-09-29 18:55)
+      ✔ about @done(19-09-29 18:55)
   Stream:
-    ✔ init @started(19-09-04 17:02) @done(19-09-04 17:26) @lasted(24m24s)
+    ✔ welcome init @started(19-09-04 17:02) @done(19-09-04 17:26) @lasted(24m24s)
+    ☐ category welcome page
+    ☐ Live stream page
   Register/Login:
     ☐ init
 
 Components:
   ✔ Sidebar @started(19-09-02 01:01) @break(19-09-02 05:06) @lasted(4h5m6s)
       Subtasks:   
-        ☐ Icon hover effect
+        ✘ Icon hover effect @cancelled(19-09-29 00:50)
 
 Other:
   ✔ Private route @started(19-09-02 23:10) @done(19-09-03 00:00) @lasted(50m31s)
