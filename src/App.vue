@@ -11,9 +11,8 @@ import "buefy/dist/buefy.css";
 import "@mdi/font/css/materialdesignicons.css";
 Vue.use(Buefy);
 
-
 export default {
-  name: "app",
+  name: "app"
 };
 </script>
 
@@ -21,6 +20,8 @@ export default {
 <style lang="scss">
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
+@import './assets/css/reset.css';
+@import './assets/css/flex.css';
 
 // Set your colors
 $primary: #263238;
@@ -110,6 +111,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #fff8;
   height: 100%;
+  font-size: 16px;
 }
 :root {
   --primary: #263238;
@@ -127,9 +129,28 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 50px 0;
+  font-size: 100%;
 }
-.f_content h1 {
+// .f_content h1 {
+//   font-size: 2em;
+//   margin-bottom: 0.5em;
+// }
+h1 {
   font-size: 2em;
-  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1.1em;
+}
+h6 {
+  font-size: 1em;
 }
 </style>
