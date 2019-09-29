@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <h1>
+    <h3>
       <slot />
-    </h1>
+    </h3>
   </div>
 </template>
 
@@ -13,13 +13,13 @@ export default {};
 <style>
 .header {
   border-bottom: 1px solid var(--secondary-dark);
-  margin-bottom: 30px;
+  padding-bottom: 1rem;
 }
-.header h1 {
+.header h3 {
   position: relative;
   display: inline-block;
 }
-.header h1::before {
+.header h3::before {
   content: "";
   width: 100%;
   position: absolute;
